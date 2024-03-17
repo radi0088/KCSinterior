@@ -1,0 +1,97 @@
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+background-image: url("");
+}
+* {
+box-sizing: border-box;
+}
+body {
+margin: 0;
+}
+.header {
+background-color: #f1f1f1;
+padding: 20px;
+text-align: center;
+}
+.topnav {
+overflow: hidden;
+background-color: #333;
+}
+.topnav a {
+float: left;
+display: block;
+color: #f2f2f2;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+.topnav a:hover {
+background-color: #ddd;
+color: black;
+}
+.column {
+float: left;
+width: 33.33%;
+padding: 15px;
+}
+.row::after {
+content: "";
+display: table;
+clear: both;
+}
+@media screen and (max-width:600px) {
+.column {
+width: 100%;
+}
+}
+</style>
+</head>
+<body>
+<div style="text-align:center; margin-top:40px;"><img src="logo.jpg"></div>
+
+<p style="font-size:20px; text-align:center; line-height:30px; margin=bottom:50px;">
+DXB AL-QUOZ</p>
+
+<div class="topnav">
+<a style="padding-right:20px;" href="index.html">Home</a>
+<a style="padding-right:20px;" href="aboutus.html">About</a>
+<a style="padding-right:20px;" href="contact.html">Contact</a>
+</div>
+
+<h1 style="font-size:30px; text-align:center;">
+CREATING A NEW SPACE TO YOUR HOME</h1>
+
+<hr>
+<div class="row">
+
+<div class="column">
+<h2>Transform Spaces, Transform Lives</h2>
+<p>
+At KCS Interior Design, we believe that great design has the power to transform spaces and enhance lives. That's why we offer a range of services tailored to meet your unique needs and vision.
+</p>
+<img src="inthome.jpg">
+</div>
+
+<div class="column">
+<h2>Window Treatments</h2>
+<p>
+Window treatments are an essential element of any interior design project. Our team will help you choose the perfect drapes, shades, or blinds to complement your space and provide the functionality you need.
+</p>
+<img src="inthome2.jpg">
+</div>
+
+<div class="column">
+<h2>Project Management</h2>
+<p>
+From start to finish, we'll handle every aspect of your interior design project. Our project management services ensure that everything runs smoothly, on time, and on budget, help you select pieces that not only look great but also function well in your space.
+</p>
+<img src="inthome3.jpg">
+</div>
+<footer>
+&copy;KCS Interior Design
+</footer>
